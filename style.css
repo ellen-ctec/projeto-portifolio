@@ -185,18 +185,22 @@ h2 {
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Centraliza conteúdo horizontalmente */
   text-align: center;
+  
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
-.card .btn {
-  margin-top: 1rem;
-  align-self: center;
+.cards .card a.btn {
+  margin: 1rem auto 0 auto;
+  display: block;
+  width: fit-content;
+  
 }
+
 
 /* 🔹 CERTIFICADOS */
 .certificados ul {
@@ -271,7 +275,7 @@ footer {
   height: 50px;
   bottom: 30px;
   right: 30px;
-  background-color: hsl(142, 70%, 49%);
+  background-color: hsl(142, 71%, 54%);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -284,12 +288,6 @@ footer {
 .whatsapp-float:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.whatsapp-float img {
-  width: 35px;
-  height: 35px;
-  filter: invert(1);
 }
 
 /* 🔹 RESPONSIVO EXTRA */
@@ -313,3 +311,4 @@ footer {
     padding: 6rem 1rem 3rem;
   }
 }
+
