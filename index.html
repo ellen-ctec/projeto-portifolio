@@ -12,8 +12,11 @@
     <nav class="navbar">
       <h1 class="logo">C<span>-tech</span></h1>
       <ul class="menu">
-        <li><a href="#sobre">Sobree</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -28,90 +31,124 @@
   </section>
 
   <section id="sobre" class="sobre">
-  <h2>Sobre mim</h2>
-  <div class="sobre-container">
-    <img src="minha-foto.jpg.jpeg" alt="Foto de Claudyelle" class="foto-perfil">
-    <div class="bio">
-      <p>Sou <strong>Claudyelle Cordeiro</strong>, profissional de T.I apaixonada por tecnologia e inovação. 
-      Trabalho com redes, manutenção e desenvolvimento web. Gosto de criar soluções que unem design e funcionalidade 
-      para simplificar a vida das pessoas.</p>
-      <p>Atualmente, estou focada em aprimorar minhas habilidades em <strong>JavaScript, HTML, CSS</strong> e 
-      <strong>segurança da informação</strong>.</p>
-    </div>
-  </div>
-</section>
-
-  <section id="projetos" class="projetos">
-    <h2>Meus Projetos</h2>
-    <div class="cards">
-      <div class="card">
-  <h3>Site de Portfólio</h3>
-  <p>Um site moderno feito com HTML, CSS e JavaScript para mostrar meus trabalhos.</p>
-  <a href="portifolio.html" target="_blank" class="btn">Ver Portfólios</a>
-</div>
-
-      <div class="card">
-        <h3>Sistema de Gestão</h3>
-        <p>Aplicação desenvolvida para automatizar tarefas administrativas e melhorar a produtividade.</p>
-      </div>
-      <div class="card">
-        <h3>Monitor de Rede</h3>
-        <p>Projeto que verifica o status de servidores e envia alertas em tempo real.</p>
+    <h2>Sobre mim</h2>
+    <div class="sobre-container">
+      <img src="minha-foto.jpg.jpeg" alt="Foto de Claudyelle" class="foto-perfil">
+      <div class="bio">
+        <p>Sou <strong>Claudyelle Cordeiro</strong>, profissional de T.I apaixonada por tecnologia e inovação. 
+        Trabalho com redes, manutenção e desenvolvimento web. Gosto de criar soluções que unem design e funcionalidade 
+        para simplificar a vida das pessoas.</p>
+        <p>Atualmente, estou focada em aprimorar minhas habilidades em <strong>JavaScript, HTML, CSS</strong> e 
+        <strong>segurança da informação</strong>.</p>
       </div>
     </div>
   </section>
 
-  <section id="contato" class="contato">
-  <h2>Contato</h2>
-  <form action="https://formsubmit.co/claudyellesantos47@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Seu nome" required>
-    <input type="email" name="email" placeholder="email" required>
-    <textarea name="message" placeholder="Sua mensagem" required></textarea>
-    <button type="submit" class="btn">Enviar</button>
+  <!-- 🔹 NOVA SEÇÃO: Habilidades -->
+  <section id="habilidades" class="habilidades">
+    <h2>Minhas Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill"><p>HTML</p><div class="barra"><div style="width: 90%"></div></div></div>
+      <div class="skill"><p>CSS</p><div class="barra"><div style="width: 85%"></div></div></div>
+      <div class="skill"><p>JavaScript</p><div class="barra"><div style="width: 75%"></div></div></div>
+      <div class="skill"><p>Java</p><div class="barra"><div style="width: 65%"></div></div></div>
+      <div class="skill"><p>Banco de Dados</p><div class="barra"><div style="width: 70%"></div></div></div>
+    </div>
+  </section>
 
-    <!-- Configurações ocultas -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-  </form>
+  <!-- 🔹 Seção de Projetos -->
+  <section id="projetos" class="projetos fade-in">
+  <h2>Meus Projetos</h2>
+  <div class="cards">
+
+    <!-- 🔹 Projeto 1 -->
+    <div class="card">
+      <img src="img/projeto-portfolio.jpg" alt="Site de Portfólio" class="projeto-img">
+      <h3>Site de Portfólio</h3>
+      <p>Um site moderno feito com HTML, CSS e JavaScript para mostrar meus trabalhos.</p>
+      <a href="https://github.com/seu-usuario/portfolio" target="_blank" class="btn">Ver no GitHub</a>
+    </div>
+
+    <!-- 🔹 Projeto 2 -->
+    <div class="card">
+      <img src="img/projeto-gestao.jpg" alt="Sistema de Gestão" class="projeto-img">
+      <h3>Sistema de Gestão</h3>
+      <p>Aplicação desenvolvida para automatizar tarefas administrativas e melhorar a produtividade.</p>
+      <a href="https://github.com/seu-usuario/sistema-gestao" target="_blank" class="btn">Ver no GitHub</a>
+    </div>
+
+    <!-- 🔹 Projeto 3 -->
+    <div class="card">
+      <img src="img/projeto-monitor.jpg" alt="Monitor de Rede" class="projeto-img">
+      <h3>Monitor de Rede</h3>
+      <p>Projeto que verifica o status de servidores e envia alertas em tempo real.</p>
+      <a href="https://github.com/seu-usuario/monitor-rede" target="_blank" class="btn">Ver no GitHub</a>
+    </div>
+
+  </div>
 </section>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Obrigado!</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div style="text-align:center; margin-top:100px;">
-    <h1>✅ Mensagem enviada com sucesso!</h1>
-    <p>Obrigado por entrar em contato. Retornarei em breve!</p>
-    <a href="index.html" class="btn">Voltar ao site</a>
-  </div>
-</body>
-</html>
 
+  <!-- 🔹 NOVA SEÇÃO: Certificados -->
+  <section id="certificados" class="certificados">
+    <h2>Certificados e Cursos</h2>
+    <ul>
+      <li>💻 Curso de HTML e CSS – Alura (2024)</li>
+      <li>🛠️ Redes de Computadores – SENAI (2023)</li>
+      <li>☁️ Introdução à Segurança da Informação – DIO (2025)</li>
+    </ul>
+  </section>
 
+  <!-- 🔹 NOVA SEÇÃO: Linha do Tempo / Trajetória -->
+  <section id="trajetoria" class="trajetoria">
+    <h2>Minha Trajetória</h2>
+    <div class="timeline">
+      <div class="evento">
+        <span>2022</span>
+        <p>Iniciei meus estudos na área de Tecnologia da Informação.</p>
+      </div>
+      <div class="evento">
+        <span>2023</span>
+        <p>Concluí cursos técnicos e comecei a desenvolver projetos próprios.</p>
+      </div>
+      <div class="evento">
+        <span>2024</span>
+        <p>Criei meu primeiro portfólio e sistemas de controle de produtos.</p>
+      </div>
+      <div class="evento">
+        <span>2025</span>
+        <p>Buscando oportunidades para aplicar meus conhecimentos no mercado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 NOVO BOTÃO: Baixar Currículo -->
+  <section class="curriculo">
+    <h2>Baixe meu Currículo</h2>
+    <a href="curriculo-claudyelle.pdf" download class="btn">📄 Download PDF</a>
+  </section>
+
+  <!-- 🔹 Seção de Contato -->
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <form id="form-contato" action="https://formsubmit.co/claudyellesantos47@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <textarea name="message" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+    </form>
+  </section>
 
   <footer>
     <p>© 2025 Claudyelle Cordeiro - Todos os direitos reservados.</p>
   </footer>
 
-<!-- Botão WhatsApp -->
-<a href="https://wa.me/5569985002640" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="Fale comigo no WhatsApp">
-   <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" 
-        alt="WhatsApp" 
-        width="50" 
-        height="50" 
-        style="border-radius: 50%;" />
-</a>
-
-
-</div>
-
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5569985002640" class="whatsapp-float" target="_blank" aria-label="Fale comigo no WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="50" height="50" style="border-radius: 50%;" />
+  </a>
 </body>
 </html>

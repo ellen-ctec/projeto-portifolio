@@ -1,3 +1,4 @@
+/* 🔹 RESET GERAL */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+/* 🔹 HEADER & NAVBAR */
 header {
   background: rgba(15, 23, 42, 0.95);
   position: fixed;
@@ -18,7 +20,7 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
@@ -47,23 +49,15 @@ header {
 .menu a {
   color: #f1f5f9;
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
 }
 
 .menu a:hover {
   color: hsl(234, 84%, 76%);
 }
 
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(135deg, #0f172a 40%, #1e293b);
-  padding-top: 80px;
-}
-
+/* 🔹 HERO SECTION */
 .hero {
   height: 50vh;
   display: flex;
@@ -78,11 +72,20 @@ header {
   padding-top: 80px;
 }
 
+.hero-text h2 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
 
 .hero-text span {
   color: hsl(234, 83%, 61%);
 }
 
+.hero-text p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* 🔹 BOTÃO GERAL */
 .btn {
   display: inline-block;
   background: #5761e7;
@@ -92,13 +95,14 @@ header {
   margin-top: 1rem;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
   background: hsl(234, 84%, 76%);
 }
 
+/* 🔹 SEÇÕES */
 section {
   padding: 5rem 2rem;
   max-width: 1000px;
@@ -107,10 +111,11 @@ section {
 
 h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: hsl(234, 70%, 78%);
 }
 
+/* 🔹 SOBRE */
 .sobre-container {
   display: flex;
   flex-wrap: wrap;
@@ -134,6 +139,39 @@ h2 {
   line-height: 1.7;
 }
 
+/* 🔹 HABILIDADES */
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.skill p {
+  margin-bottom: 0.3rem;
+}
+
+.barra {
+  background: #334155;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.barra div {
+  height: 100%;
+  background: rgb(142, 153, 245);
+  border-radius: 5px;
+}
+
+/* 🔹 PROJETOS */
+.projeto-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 30px rgb(142, 153, 245);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -145,12 +183,55 @@ h2 {
   padding: 1.5rem;
   border-radius: 10px;
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
+.card .btn {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+/* 🔹 CERTIFICADOS */
+.certificados ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.certificados li {
+  padding: 0.5rem 0;
+}
+
+/* 🔹 TRAJETÓRIA */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-left: 3px solid #5761e7;
+  padding-left: 1rem;
+}
+
+.evento span {
+  font-weight: bold;
+  color: hsl(234, 84%, 76%);
+}
+
+.evento p {
+  margin-left: 1rem;
+}
+
+/* 🔹 CURRÍCULO */
+.curriculo {
+  text-align: center;
+}
+
+/* 🔹 FORMULÁRIO DE CONTATO */
 form {
   display: flex;
   flex-direction: column;
@@ -162,19 +243,28 @@ input, textarea {
   border: none;
   border-radius: 6px;
   outline: none;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 button.btn {
   cursor: pointer;
 }
 
+/* 🔹 RODAPÉ */
 footer {
   text-align: center;
   padding: 1.5rem;
   background: #1e293b;
   margin-top: 3rem;
+  font-size: 0.9rem;
 }
 
+/* 🔹 BOTÃO WHATSAPP */
 .whatsapp-float {
   position: fixed;
   width: 50px;
@@ -193,31 +283,33 @@ footer {
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 4px 1cqh rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.whatsapp-icon {
+.whatsapp-float img {
   width: 35px;
   height: 35px;
   filter: invert(1);
 }
 
-.card {
-  background: #1e293b;
-  padding: 1.5rem;
-  border-radius: 10px;
-  transition: transform 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza o botão e o conteúdo */
-  text-align: center;  /* Centraliza o texto também */
+/* 🔹 RESPONSIVO EXTRA */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: auto;
+    padding: 6rem 1rem 3rem;
+  }
 }
-
-.card .btn {
-  margin-top: 1rem;
-  align-self: center; /* Garante que o botão fique centralizado */
-}
-
-
-
-
