@@ -164,12 +164,12 @@ h2 {
 
 /* 🔹 PROJETOS */
 .projeto-img {
-  width: 100%;
+  width: 120%;
   height: 190px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 9px;
   margin-bottom: 2rem;
-  box-shadow: 0 5px 30px rgb(142, 153, 245);
+  box-shadow: 0 6px 30px rgb(142, 153, 245);
 }
 
 .cards {
@@ -180,7 +180,7 @@ h2 {
 
 .card {
   background: #1e293b;
-  padding: 1.5rem;
+  padding: 1.9rem;
   border-radius: 10px;
   transition: transform 0.3s;
   display: flex;
@@ -234,6 +234,39 @@ h2 {
 .curriculo {
   text-align: center;
 }
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-left: 3px solid #5761e7;
+  padding-left: 1rem;
+}
+
+.evento span {
+  font-weight: bold;
+  color: hsl(234, 84%, 76%);
+}
+
+.evento p {
+  margin-left: 1rem;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-left: 3px solid #5761e7;
+  padding-left: 1rem;
+}
+
+.evento span {
+  font-weight: bold;
+  color: hsl(234, 84%, 76%);
+}
+
+.evento p {
+  margin-left: 1rem;
+}
+
 
 /* 🔹 FORMULÁRIO DE CONTATO */
 form {
@@ -310,5 +343,38 @@ footer {
     height: auto;
     padding: 6rem 1rem 3rem;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons img {
+  vertical-align: middle;
+  filter: brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  filter: brightness(70%);
+  cursor: pointer;
 }
 
